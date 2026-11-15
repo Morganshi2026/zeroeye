@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-11-15T11:35:11.825292+00:00",
+  "commit": "19908806",
+  "diagnostic_logd": "diagnostic/build-19908806.logd",
+  "diagnostic_logd_error": "encryptly pack could not complete in this environment (the Windows binary requires an interactive console); the .logd is therefore a placeholder and the module-level build output is recorded below",
+  "chunked": false,
+  "chunk_size_bytes": null,
+  "password": null,
+  "decrypt_command": null,
+  "total_modules": 4,
+  "passed": 0,
+  "failed": 4,
+  "modules": [
+    {
+      "name": "backend",
+      "status": "FAIL",
+      "elapsed_seconds": 0,
+      "artifact": null,
+      "output": "Command not found: [WinError 2] \u7cfb\u7edf\u627e\u4e0d\u5230\u6307\u5b9a\u7684\u6587\u4ef6\u3002"
+    },
+    {
+      "name": "market",
+      "status": "FAIL",
+      "elapsed_seconds": 0,
+      "artifact": null,
+      "output": "Command not found: [WinError 2] \u7cfb\u7edf\u627e\u4e0d\u5230\u6307\u5b9a\u7684\u6587\u4ef6\u3002"
+    },
+    {
+      "name": "frailbox",
+      "status": "FAIL",
+      "elapsed_seconds": 0.093,
+      "artifact": null,
+      "output": "The syntax of the command is incorrect.\nmake: *** [build/src/arena.o] Error 1"
+    },
+    {
+      "name": "engine",
+      "status": "FAIL",
+      "elapsed_seconds": 0,
+      "artifact": null,
+      "output": "Command not found: [WinError 2] \u7cfb\u7edf\u627e\u4e0d\u5230\u6307\u5b9a\u7684\u6587\u4ef6\u3002"
+    }
+  ],
+  "pr_note": "Include the diagnostic artifact diagnostic/build-19908806.logd and the metadata file diagnostic/build-19908806.json. The Rust / Go / make toolchain is unavailable in this environment, so all modules report FAIL; the per-module command output is in the JSON metadata. The encrypted .logd could not be produced because encryptly pack requires an interactive console."
+}
